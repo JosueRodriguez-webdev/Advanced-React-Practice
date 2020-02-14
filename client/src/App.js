@@ -37,9 +37,11 @@ class App extends React.Component {
           <span role="img" aria-label="Smiling emoji">
             😃
           </span>
-          {this.state.players.map((players) => {
-            return <PlayerCard key={players.id} players={players} />;
-          })}
+          <div className="container">
+            {this.state.players.map((players) => {
+              return <PlayerCard key={players.id} players={players} />;
+            })}
+          </div>
         </h1>
       </div>
     );

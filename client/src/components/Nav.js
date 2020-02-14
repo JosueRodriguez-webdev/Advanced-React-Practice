@@ -12,7 +12,7 @@ export const Nav = () => {
   return (
     <div>
       <nav>
-        <h1 className="nav-title">Menu</h1>
+        <h1 className="nav-title">men's soccer players - world ranking</h1>
         <button onClick={toggle} className="btn">
           darkmode
         </button>

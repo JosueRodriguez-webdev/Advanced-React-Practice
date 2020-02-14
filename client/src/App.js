@@ -3,6 +3,7 @@ import React from "react";
 import axios from "axios";
 
 import { PlayerCard } from "./components/PlayerCard.js";
+import { Nav } from "./components/Nav";
 
 import "./App.css";
 
@@ -30,6 +31,7 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
+        <Nav />
         <h1>
           Happy building{" "}
           <span role="img" aria-label="Smiling emoji">

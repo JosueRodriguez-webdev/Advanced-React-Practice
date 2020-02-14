@@ -2,6 +2,8 @@ import React from "react";
 
 import axios from "axios";
 
+import { PlayerCard } from "./components/PlayerCard.js";
+
 import "./App.css";
 
 class App extends React.Component {
@@ -33,6 +35,9 @@ class App extends React.Component {
           <span role="img" aria-label="Smiling emoji">
             😃
           </span>
+          {this.state.players.map((players) => {
+            return <PlayerCard key={players.id} players={players} />;
+          })}
         </h1>
       </div>
     );
